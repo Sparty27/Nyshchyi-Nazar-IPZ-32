@@ -14,54 +14,51 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    letter-spacing: 0.28px;
     color: var(--primary-color);
 }
 
 /* HEADER */
 
-
-
-
-
 .header {
     background-color: var(--background-primary-color);
 }
 
-.contact-info {
-    color: var(--secondary-color);
-}
-
-.contact-info,
-.navigation-button-list {
-    list-style-type: none;
-}
-
 .logo {
-    color: var(--primary-color);
-    text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
     letter-spacing: 0.78px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.contact-info {
+    color: var(--secondary-color);
+}
+
+.contact-info,
+.navigation-list {
+    list-style-type: none;
 }
 
 .tel,
 .email,
-.navigation-button,
-.navigation-button-active {
-    text-decoration: none;
+.navigation-button{
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.28px;
     color: inherit;
+    text-decoration: none;
 }
 
 .tel:hover,
+.tel:focus,
 .email:hover,
+.email:focus,
 .accent-text-logo,
 .navigation-button:hover,
-.navigation-button-active {
+.navigation-button:focus{
     color: var(--accent-color);
 }
 
@@ -73,31 +70,30 @@ body {
 
 .hero-header {
     color: var(--background-primary-color);
-    line-height: 1.36;
-    letter-spacing: 2.64px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 900;
     font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
 }
 
 .hero-button {
-    line-height: 1.87;
-    letter-spacing: 0.96px;
     cursor: pointer;
     background-color: var(--accent-color);
     color: var(--background-primary-color);
     font-weight: 700;
     font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
 }
 
 .feature-label {
+    font-size: inherit;
+    font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.42px;
-    font-size: inherit;
     text-transform: uppercase;
-    font-weight: 700;
-    
 }
 
 .feature-description {
@@ -171,10 +167,10 @@ body {
 
 .tel-footer,
 .email-footer {
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-decoration: none;
-    font-size: 14px;
     color: var(--transperent-color);
 }
 
@@ -185,18 +181,18 @@ body {
     list-style-type: none;
 }
 
-.filter,
-.active-filter {
-    line-height: 1.62;
-    letter-spacing: 0.48px;
+.filter{
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
     cursor: pointer;
     background-color: var(--inactive-filter-color);
     color: var(--primary-color);
 }
 
-.active-filter {
+.filter:hover,
+.filter:focus {
     color: var(--background-primary-color);
     background-color: var(--accent-color);
 }
@@ -207,16 +203,16 @@ body {
 }
 
 .project-title {
+    font-weight: 700;
+    font-size: 18px;
     line-height: 2;
     letter-spacing: 1.08px;
     color: var(--primary-color);
-    font-weight: 700;
-    font-size: 18px;
 }
 
 .project-description {
+    font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.48px;
-    font-size: 16px;
     color: var(--secondary-color);
 }
