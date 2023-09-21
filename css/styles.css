@@ -60,6 +60,7 @@ body {
 .navigation-button:hover,
 .navigation-button:focus{
     color: var(--accent-color);
+    transition: all 0.3s;
 }
 
 /* MAIN */
@@ -69,23 +70,24 @@ body {
 }
 
 .hero-header {
-    color: var(--background-primary-color);
-    text-transform: uppercase;
-    text-align: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 2.64px;
+    color: var(--background-primary-color);
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .hero-button {
-    cursor: pointer;
-    background-color: var(--accent-color);
-    color: var(--background-primary-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.96px;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--background-primary-color);
 }
 
 .feature-label {
@@ -186,6 +188,7 @@ body {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.48px;
+    text-align: center;
     cursor: pointer;
     background-color: var(--inactive-filter-color);
     color: var(--primary-color);
@@ -195,6 +198,7 @@ body {
 .filter:focus {
     color: var(--background-primary-color);
     background-color: var(--accent-color);
+    transition: all 0.3s;
 }
 
 .project {
