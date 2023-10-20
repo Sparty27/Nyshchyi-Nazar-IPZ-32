@@ -311,12 +311,30 @@ h1, h2, h3, p, ul, li {
 
 /* PORTFOLIO-MAIN */
 
-.filter-list,
+.project-area {
+    padding: 94px 0;
+}
+
+.filter-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
 .project-list {
     list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 30px;
 }
 
 .filter{
+    gap: 30px;
+    padding: 6px 22px;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -324,6 +342,7 @@ h1, h2, h3, p, ul, li {
     letter-spacing: 0.48px;
     text-align: center;
     cursor: pointer;
+    font-family: inherit;
     background-color: var(--inactive-filter-color);
     color: var(--primary-color);
 }
@@ -332,12 +351,24 @@ h1, h2, h3, p, ul, li {
 .filter:focus {
     color: var(--background-primary-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     transition: all 0.3s;
 }
 
 .project {
     background-color: var(--background-primary-color);
     text-decoration: none;
+}
+
+.project img {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.project-list li {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EEE;
 }
 
 .project-title {
@@ -353,4 +384,8 @@ h1, h2, h3, p, ul, li {
     line-height: 1.87;
     letter-spacing: 0.48px;
     color: var(--secondary-color);
+}
+
+.project-details {
+    padding: 0px 24px 20px 24px;
 }
