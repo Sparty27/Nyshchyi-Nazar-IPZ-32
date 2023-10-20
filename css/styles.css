@@ -8,6 +8,7 @@
     --accent-color: #2196F3;
     --transperent-color: #FFFFFF99;
     --inactive-filter-color: #F5F4FA;
+    --shadow-color: rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -15,17 +16,45 @@ body {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.28px;
+    margin: 0 auto;
 }
 
 a {
     color: inherit;
     text-decoration: none;
-    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+button {
+    border: 0px;
+    border-radius: 4px;
+}
+
+button:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+}
+
+h1, h2, h3, p, ul, li {
+    padding: 0;
+    margin: 0;
+}
 
 /* HEADER */
 
 .header {
     background-color: var(--background-primary-color);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -36,14 +65,29 @@ a {
     letter-spacing: 0.78px;
     color: var(--primary-color);
     text-decoration: none;
+    margin-right: 93px;
 }
 .contact-info {
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
     color: var(--secondary-color);
+}
+
+.navigation-list {
+    display: flex;
+    gap: 50px;
 }
 
 .contact-info,
 .navigation-list {
     list-style-type: none;
+}
+
+.navigation-button,
+.navigation-button-active {
+    display: inline-block;
+    padding: 32px 0;
 }
 
 .tel,
@@ -78,6 +122,15 @@ a {
 
 .hero {
     background-color: var(--background-secondary-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .hero-header {
@@ -85,21 +138,42 @@ a {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 2.64px;
+    width: 696px;
+    margin-bottom: 40px;
     color: var(--background-primary-color);
     text-transform: uppercase;
     text-align: center;
 }
 
 .hero-button {
-    font-family: 'Roboto';
+    border-radius: 4px;
+    padding: 10px 24px;
+    margin: auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.96px;
     cursor: pointer;
-    text-align: center;
     background-color: var(--accent-color);
     color: var(--background-primary-color);
+    box-shadow: 0px 4px 4px 0px var(--shadow-color);
+}
+
+.main-content {
+    padding-top: 93px;
+}
+
+.feature {
+    width: 270px;
+    height: 98px;
+    flex-shrink: 0;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
 }
 
 .feature-label {
@@ -107,6 +181,7 @@ a {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.42px;
+    padding-bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -117,12 +192,24 @@ a {
     color: var(--secondary-color);
 }
 
+.development {
+    padding: 94px 0;
+}
+
 .team-header,
 .dev-stack-header {
     line-height: 1.17;
     letter-spacing: 1.08px;
     font-weight: 700;
     font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.dev-stack-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .team-list,
@@ -131,28 +218,54 @@ a {
     list-style-type: none;
 }
 
-.employee {
-    background-color: var(--background-primary-color);
+.team-section {
+    background-color: var(--inactive-filter-color);
+    padding: 94px 0;
 }
 
-.employee-name {
-    line-height: 1.17;
-    letter-spacing: 0.48px;
-    font-weight: 500;
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.employee {
+    background-color: var(--background-primary-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.employee img {
+    width: 270px;
+    height: 260px;
+}
+
+.employee-name-job {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.employee-name,
+.employee-job {
+    padding-bottom: 10px;
     font-size: 16px;
+    line-height: 1.17;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
 }
 
 .employee-job {
-    line-height: 1.17;
-    letter-spacing: 0.48px;
     color: var(--secondary-color);
-    font-size: 16px;
 }
 
 /* FOOTER */
 
 .footer {
     background-color: var(--background-secondary-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -174,9 +287,17 @@ a {
     color: var(--background-primary-color);
 }
 
+.contact-address {
+    margin-top: 28px;
+}
+
 .contact-info-footer {
     all: initial;
     font-family: inherit;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .tel-footer,
