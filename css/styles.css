@@ -165,8 +165,7 @@ h1, h2, h3, p, ul, li {
 }
 
 .feature {
-    width: 270px;
-    height: 98px;
+    max-width: 270px;
     flex-shrink: 0;
 }
 
@@ -182,7 +181,7 @@ h1, h2, h3, p, ul, li {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.42px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -241,8 +240,8 @@ h1, h2, h3, p, ul, li {
 }
 
 .employee-name-job {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .employee-name,
@@ -295,10 +294,11 @@ h1, h2, h3, p, ul, li {
 .contact-info-footer {
     all: initial;
     font-family: inherit;
-    list-style-type: none;
-    display: flex;
     flex-direction: column;
-    gap: 12px;
+}
+
+.contact-info-footer li:not(:first-child) {
+    margin-top: 12px;
 }
 
 .tel-footer,
@@ -362,7 +362,6 @@ h1, h2, h3, p, ul, li {
 }
 
 .project img {
-    margin-bottom: 30px;
     display: block;
 }
 
@@ -388,5 +387,5 @@ h1, h2, h3, p, ul, li {
 }
 
 .project-details {
-    padding: 0px 24px 20px 24px;
+    padding: 20px 24px;
 }
