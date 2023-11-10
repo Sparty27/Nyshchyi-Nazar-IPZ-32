@@ -107,7 +107,18 @@ h1, h2, h3, p, ul, li {
     letter-spacing: 0.28px;
     text-decoration: none;
 }
+.email-icon,
+.phone-icon{
+    margin-right: 10px;
+}
 
+.tel,
+.email {
+    fill: var(--secondary-color);
+}
+
+.email-icon:hover,
+.phone-icon:hover,
 .tel:hover,
 .tel:focus,
 .email:hover,
@@ -115,14 +126,16 @@ h1, h2, h3, p, ul, li {
 .accent-text-logo,
 .navigation-button:hover,
 .navigation-button:focus{
-    color: var(--accent-color);
     transition: all 0.3s;
+    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* MAIN */
 
 .hero {
-    background-color: var(--background-secondary-color);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/Img.jpg") center no-repeat;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -132,6 +145,7 @@ h1, h2, h3, p, ul, li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-height: 200px;
 }
 
 .hero-header {
@@ -167,6 +181,21 @@ h1, h2, h3, p, ul, li {
 .feature {
     max-width: 270px;
     flex-shrink: 0;
+}
+
+.feature-background {
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--inactive-filter-color);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
 }
 
 .feature-list {
@@ -295,6 +324,10 @@ h1, h2, h3, p, ul, li {
     all: initial;
     font-family: inherit;
     flex-direction: column;
+}
+
+.contact-info-footer li {
+    list-style-type: none;
 }
 
 .contact-info-footer li:not(:first-child) {
