@@ -116,6 +116,8 @@ h1, h2, h3, p, ul, li {
 
 .tel,
 .email {
+    display: flex;
+    align-items: center;
     fill: var(--secondary-color);
 }
 
@@ -328,8 +330,8 @@ h1, h2, h3, p, ul, li {
 }
 
 .employee-name-job {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .employee-name,
