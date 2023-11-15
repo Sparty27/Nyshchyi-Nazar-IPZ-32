@@ -552,6 +552,41 @@ h1, h2, h3, p, ul, li {
     text-decoration: none;
 }
 
+.product-item:hover .description-section
+{
+    transform: translateY(0);
+}
+.product-item:focus .description-section
+{
+    transform: translateY(0);
+}
+
+.description-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(150%);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    opacity: 0.9;
+    transition-property: transform;
+}
+
+.text-description {
+    font-size: 18px;
+    line-height: 155.56%;
+    letter-spacing: 0.54px;
+    color: var(--background-primary-color);
+    padding: 63px 24px;
+    background-color: var(--accent-color);
+    opacity: 0.9;
+}
+
+.product-img {
+    position: relative;
+    overflow: hidden;
+}
+
 .project img {
     display: block;
 }
