@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +24,12 @@
         <ul class="contact-info">
           <li>
             <a class="email" href="mailto:info@devstudio.com"><svg class="email-icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-mail5">
+              <use href="./images/icons.svg#icon-envelope">
             </svg>info@devstudio.com</a>
           </li>
           <li>
             <a class="tel" href="tel:+380961111111"><svg class="phone-icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-phone2">
+              <use href="./images/icons.svg#icon-smartphone">
             </svg>+38 096 111 11 11</a>
           </li>
         </ul>
@@ -38,7 +39,7 @@
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="main-content">
@@ -48,7 +49,7 @@
             <li class="feature">
               <div class="feature-background">
                 <svg class="feature-icon">
-                  <use href="./images/icons.svg#icon-antenna">
+                  <use href="./images/icons.svg#icon-attention-to-detail">
                 </svg>
               </div>
               <h3 class="feature-label">Увага до деталей</h3>
@@ -60,7 +61,7 @@
             <li class="feature">
               <div class="feature-background">
                 <svg class="feature-icon">
-                  <use href="./images/icons.svg#icon-clock3">
+                  <use href="./images/icons.svg#icon-punctuality">
                 </svg>
               </div>
               <h3 class="feature-label">Пунктуальність</h3>
@@ -72,7 +73,7 @@
             <li class="feature">
               <div class="feature-background">
                 <svg class="feature-icon">
-                  <use href="./images/icons.svg#icon-diagram">
+                  <use href="./images/icons.svg#icon-planning">
                 </svg>
               </div>
               <h3 class="feature-label">Планування</h3>
@@ -83,7 +84,7 @@
             <li class="feature">
               <div class="feature-background">
                 <svg class="feature-icon">
-                  <use href="./images/icons.svg#icon-astronaut">
+                  <use href="./images/icons.svg#icon-technologies">
                 </svg>
               </div>
               <h3 class="feature-label">Сучасні технології</h3>
@@ -101,12 +102,15 @@
           <ul class="dev-stack-list">
             <li class="dev-stack-list-item">
               <img src="images/image1.jpg" alt="Людина програмує" width="370" />
+              <p class="item-photo-description">Десктопні додатки</p>
             </li>
             <li class="dev-stack-list-item">
               <img src="images/image2.jpg" alt="Телефон і макет компонентів до нього" width="370" />
+              <p class="item-photo-description">Мобільні додатки</p>
             </li>
             <li class="dev-stack-list-item">
               <img src="images/image3.jpg" alt="Кольорова палітра" width="370" />
+              <p class="item-photo-description">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -144,7 +148,7 @@
                   </li>
                   <li><a class="team-social" href="https://linkedin.com" target="_blank">
                     <svg class="social-icon">
-                    <use href="./images/icons.svg#icon-linkedin2">
+                    <use href="./images/icons.svg#icon-linkedin">
                     </svg>
                     </a>
                   </li>
@@ -180,7 +184,7 @@
                   </li>
                   <li><a class="team-social" href="https://linkedin.com" target="_blank">
                     <svg class="social-icon">
-                    <use href="./images/icons.svg#icon-linkedin2">
+                    <use href="./images/icons.svg#icon-linkedin">
                     </svg>
                     </a>
                   </li>
@@ -216,7 +220,7 @@
                   </li>
                   <li><a class="team-social" href="https://linkedin.com" target="_blank">
                     <svg class="social-icon">
-                    <use href="./images/icons.svg#icon-linkedin2">
+                    <use href="./images/icons.svg#icon-linkedin">
                     </svg>
                     </a>
                   </li>
@@ -252,7 +256,7 @@
                   </li>
                   <li><a class="team-social" href="https://linkedin.com" target="_blank">
                     <svg class="social-icon">
-                    <use href="./images/icons.svg#icon-linkedin2">
+                    <use href="./images/icons.svg#icon-linkedin">
                     </svg>
                     </a>
                   </li>
@@ -269,42 +273,42 @@
               <li class="">
                 <a href="#" class="client-link">
                   <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client1">
+                <use href="./images/icons.svg#icon-client-logo-1">
               </svg>
             </a>
               </li>
               <li class="">
                 <a href="#" class="client-link">
                   <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client2">
+                <use href="./images/icons.svg#icon-client-logo-2">
               </svg>
             </a>
               </li>
               <li class="">
                 <a href="#" class="client-link">
                   <svg class="client-icon">
-                  <use href="./images/icons.svg#icon-client3">
+                  <use href="./images/icons.svg#icon-client-logo-3">
                 </svg>
               </a>
               </li>
               <li class="">
                 <a href="#" class="client-link">
                   <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client4">
+                  <use href="./images/icons.svg#icon-client-logo-4">
               </svg>
               </a>
               </li>
               <li class="">
               <a href="#" class="client-link">
                 <svg class="client-icon">
-                  <use href="./images/icons.svg#icon-client5">
+                  <use href="./images/icons.svg#icon-client-logo-5">
                 </svg>
               </a>
               </li>
               <li class="">
                 <a href="#" class="client-link">
                   <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client6">
+                  <use href="./images/icons.svg#icon-client-logo-6">
               </svg>
               </a> 
             </li>
@@ -359,7 +363,7 @@
             <li class="social-item">
             <a class="social-foot-link" href="https://linkedin.com" target="_blank">
               <svg class="social-icon">
-              <use href="./images/icons.svg#icon-linkedin2">
+              <use href="./images/icons.svg#icon-linkedin">
               </svg>
             </a>
             </li>
@@ -367,5 +371,14 @@
           </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal >
+      <div class="modal"> 
+          <button type="button" class="modal_button" data-modal-close> <svg class="modal_icon">
+              <use href="./images/icons.svg#icon-close"></use></svg></button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
