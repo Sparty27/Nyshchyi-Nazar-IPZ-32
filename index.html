@@ -376,6 +376,41 @@
       <div class="modal"> 
           <button type="button" class="modal_button" data-modal-close> <svg class="modal_icon">
               <use href="./images/icons.svg#icon-close"></use></svg></button>
+          <form class="form">
+            <div class="form__contacts">
+              <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
+              <div class="form__contact">
+                <label for="name" class="form__label">Ім'я</label>
+                <input id="name" name="name" class="form__input" type="text" required placeholder="">
+                <svg class="form__icon">
+                  <use href="./images/icons.svg#icon-person-mod"></use>
+                </svg>
+              </div>
+              <div class="form__contact">
+                <label for="phone" class="form__label">Телефон</label>
+                <input id="phone" name="phone" class="form__input" type="tel" required placeholder="">
+                <svg class="form__icon">
+                  <use href="./images/icons.svg#icon-phone-mod"></use>
+                </svg>
+              </div>
+              <div class="form__contact">
+                <label for="email" class="form__label">Пошта</label>
+                <input id="email" name="email" class="form__input" type="email" required placeholder="">
+                <svg class="form__icon">
+                  <use href="./images/icons.svg#icon-mail-mod"></use>
+                </svg>
+              </div>
+              <div class="form__contact">
+                <label for="comment" class="form__label">Коментар</label>
+                <textarea id="comment" name="comment" id="text" placeholder="Введіть текст" class="form__textarea"></textarea>
+              </div>
+              <div class="form__checkbox">
+                <input type="checkbox" name="agree" value="agree" id="agree" class="form__check hide" required>
+                  <label for="agree" class="argee_label">
+                    <span></span> Погоджуюся з розсилкою та приймаю <a href="#" class="form__link"> Умови договору</a> </label> </div>
+              <input type="submit" class="form__send" value="Відправити"></input>
+            </div>
+          </form>
       </div>
     </div>
 
