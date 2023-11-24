@@ -196,6 +196,11 @@ h1, h2, h3, p, ul, li {
     box-shadow: 0px 4px 4px 0px var(--shadow-color);
 }
 
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #188CE8;
+}
+
 .main-content {
     padding-top: 93px;
 }
@@ -272,8 +277,7 @@ h1, h2, h3, p, ul, li {
     bottom: 1%;
     width: 100%;
     padding: 27px 0px;
-    background-color: var(--background-secondary-color);
-    opacity: 0.8;
+    background-color: rgba(47, 48, 58, 0.8);
 
     font-weight: 700;
     text-align: center;
@@ -504,11 +508,12 @@ h1, h2, h3, p, ul, li {
     padding: 94px 0px;
 }
 
-.product-item:hover {
+.product-item:hover,
+.product-item:focus {
     transition: 300ms;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  }
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 
 .filter-list {
     list-style-type: none;
@@ -559,7 +564,7 @@ h1, h2, h3, p, ul, li {
 {
     transform: translateY(0);
 }
-.product-item:focus .description-section
+.project:focus .description-section
 {
     transform: translateY(0);
 }
@@ -669,6 +674,18 @@ h1, h2, h3, p, ul, li {
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
+.modal_button:hover,
+.modal_button:focus {
+    background-color: var(--accent-color);
+    transition-duration: 700ms;
+}
+
+.modal_button:hover .modal_icon,
+.modal_button:focus .modal_icon {
+    fill: white;
+}
+
 
 .modal_icon {
     width: 18px;
