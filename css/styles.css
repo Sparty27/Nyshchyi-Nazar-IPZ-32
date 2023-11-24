@@ -676,17 +676,11 @@ h1, h2, h3, p, ul, li {
     cursor: pointer;
 }
 
-.modal_button:hover,
-.modal_button:focus {
-    background-color: var(--accent-color);
-    transition-duration: 700ms;
-}
-
 .modal_button:hover .modal_icon,
 .modal_button:focus .modal_icon {
-    fill: white;
+    fill: var(--accent-color);
+    transition-duration: 500ms;
 }
-
 
 .modal_icon {
     width: 18px;
@@ -733,10 +727,20 @@ h1, h2, h3, p, ul, li {
 }
 
 .form__input {
-
+    padding-left: 42px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     height: 40px;
+}
+
+.form__input:focus {
+    outline: 1px solid var(--accent-color);
+}
+
+.form__input:focus+.form__icon {
+    fill: var(--accent-color);
 }
 
 .form__textarea {
@@ -751,6 +755,10 @@ h1, h2, h3, p, ul, li {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form__textarea:focus {
+    outline: 1px solid var(--accent-color);
+}
+
 .form__textarea::placeholder {
     font-size: 12px;
     letter-spacing: 0.12px;
@@ -763,4 +771,69 @@ h1, h2, h3, p, ul, li {
     left: 12px;
     width: 18px;
     height: 18px;
+}
+
+.form__check-icon {
+    height: 15px;
+    width: 16px;
+}
+
+.form__link {
+    color: var(--accent-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+    margin-left: 5px;
+}
+
+.form__checkbox {
+    margin-top: 20px;
+}
+
+.form__check-icon__hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.form__agree-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 171.43%;
+    letter-spacing: 0.42px;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.form__agree-label span {
+    display: flex;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--black-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    fill: transparent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__check:checked+.form__agree-label span {
+    background-color: var(--accent-color);
+    border: none;
+    fill: var(--background-primary-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
