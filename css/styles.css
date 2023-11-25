@@ -679,7 +679,7 @@ h1, h2, h3, p, ul, li {
 .modal_button:hover .modal_icon,
 .modal_button:focus .modal_icon {
     fill: var(--accent-color);
-    transition-duration: 500ms;
+    transition-duration: 250ms;
 }
 
 .modal_icon {
@@ -836,4 +836,37 @@ h1, h2, h3, p, ul, li {
     fill: var(--background-primary-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__check:focus+.form__agree-label span {
+    border: 2px solid;
+    width: 18px;
+    height: 18px;
+}
+
+.form__send {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 124px;
+    margin-right: 124px;
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
+    border: none;
+    background: var(--accent-color);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+}
+
+.form__send:hover,
+.form__send:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition-duration: 250ms;
 }
