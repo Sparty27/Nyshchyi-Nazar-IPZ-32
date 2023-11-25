@@ -367,6 +367,15 @@
           </li>
         </ul>
       </div>
+      <div class="newsletter">
+        <h2 class="newsletter__title">Підпишіться на розсилку</h2>
+        <form class="footer-form">
+          <input type="email" name="footer-email" placeholder="E-mail" class="footer-form__input">
+          <button type="submit" class="footer-form__button">Підписатися <svg class="footer-form__icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg></button>
+        </form>
+      </div>
     </div>
   </footer>
 
@@ -405,11 +414,12 @@
               class="form__textarea"></textarea>
           </div>
           <div class="form__checkbox">
-            <input type="checkbox" name="agree" value="agree" id="agree" class="form__check form__check-icon__hidden" required>
+            <input type="checkbox" name="agree" value="agree" id="agree" class="form__check form__check-icon__hidden"
+              required>
             <label for="agree" class="form__agree-label">
               <span><svg class="form__check-icon">
-                <use href="./images/icons.svg#icon-check"></use>
-            </svg></span> Погоджуюся з розсилкою та приймаю <a href="#" class="form__link"> Умови договору</a>
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg></span> Погоджуюся з розсилкою та приймаю <a href="#" class="form__link"> Умови договору</a>
             </label>
           </div>
           <input type="submit" class="form__send" value="Відправити"></input>
@@ -420,4 +430,5 @@
 
   <script src="./js/modal.js"></script>
 </body>
+
 </html>
