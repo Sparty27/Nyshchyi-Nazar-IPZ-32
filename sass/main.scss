@@ -70,7 +70,6 @@ h1, h2, h3, p, ul, li {
 
 @import "./components/social-team-links";
 
-
 @import "./components/index/clients";
 
 /* FOOTER */
@@ -79,136 +78,7 @@ h1, h2, h3, p, ul, li {
 
 /* PORTFOLIO-MAIN */
 
-.project-area {
-    padding: 94px 0px;
-}
-
-.product-item:hover,
-.project:focus {
-    transition: 300ms;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.filter-list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 50px;
-}
-
-.project-list {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    gap: 30px;
-}
-
-.filter{
-    gap: 30px;
-    padding: 6px 22px;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.48px;
-    text-align: center;
-    cursor: pointer;
-    font-family: inherit;
-    background-color: var(--inactive-filter-color);
-    color: var(--primary-color);
-}
-
-.filter:hover,
-.filter:focus {
-    color: var(--background-primary-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    transition: all 0.3s;
-}
-
-.project {
-    background-color: var(--background-primary-color);
-    text-decoration: none;
-}
-
-.product-item:hover .description-section
-{
-    transform: translateY(0);
-}
-.project:focus .description-section
-{
-    transform: translateY(0);
-}
-
-.description-section {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(150%);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    opacity: 0.9;
-    transition-property: transform;
-}
-
-.text-description {
-    font-size: 18px;
-    line-height: 155.56%;
-    letter-spacing: 0.54px;
-    color: var(--background-primary-color);
-    padding: 63px 24px;
-    background-color: var(--accent-color);
-    opacity: 0.9;
-}
-
-.product-img {
-    position: relative;
-    overflow: hidden;
-}
-
-.project img {
-    display: block;
-}
-
-.project-list li {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #EEE;
-}
-
-.project-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 1.08px;
-    color: var(--primary-color);
-}
-
-.project-description {
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.48px;
-    color: var(--secondary-color);
-}
-
-.project-details {
-    padding: 20px 24px;
-}
-
-.newsletter__title {
-    margin-bottom: 20px;
-    color: var(--background-primary-color);
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
-
-
+@import "./components/portfolio/project-area";
 
 /* Modal */
 
