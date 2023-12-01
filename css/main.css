@@ -917,7 +917,6 @@ h1, h2, h3, p, ul, li {
   transform: translateY(150%);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-  opacity: 0.9;
   transition-property: transform;
 }
 
@@ -927,8 +926,7 @@ h1, h2, h3, p, ul, li {
   letter-spacing: 0.54px;
   color: #FFFFFF;
   padding: 63px 24px;
-  background-color: #2196F3;
-  opacity: 0.9;
+  background-color: rgba(33, 150, 243, 0.8);
 }
 
 .project-area__details {
@@ -1011,7 +1009,7 @@ h1, h2, h3, p, ul, li {
   fill: #000000;
 }
 
-.form__title {
+.modal__title {
   display: flex;
   justify-content: space-around;
   color: #212121;
@@ -1142,7 +1140,7 @@ h1, h2, h3, p, ul, li {
   border-radius: 2px;
   margin-right: 8px;
   fill: transparent;
-  transition-duration: 250ms;
+  transition-duration: 0ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1156,9 +1154,10 @@ h1, h2, h3, p, ul, li {
 
 .form__send {
   margin-top: 30px;
-  margin-bottom: 40px;
-  margin-left: 124px;
-  margin-right: 124px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
   min-width: 200px;
   min-height: 50px;
   border-radius: 4px;

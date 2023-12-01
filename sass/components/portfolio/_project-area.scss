@@ -88,7 +88,6 @@
         transform: translateY(150%);
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 250ms;
-        opacity: 0.9;
         transition-property: transform;
     }
 
@@ -98,8 +97,7 @@
         letter-spacing: 0.54px;
         color: getColor(background-primary-color);
         padding: 63px 24px;
-        background-color: getColor(accent-color);
-        opacity: 0.9;
+        background-color: rgba(33, 150, 243, 0.8);
     }
 
     &__details {
