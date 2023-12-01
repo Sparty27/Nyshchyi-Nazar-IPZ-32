@@ -21,7 +21,7 @@
         padding: 25px 100px;
         margin-bottom: 30px;
         border-radius: 4px;
-        background-color: var(--inactive-filter-color);
+        background-color: getColor(inactive-filter-color);
     }
 
     &__feature-icon {
@@ -42,6 +42,6 @@
         line-height: 1.71;
         letter-spacing: 0.42px;
         font-size: 14px;
-        color: var(--secondary-color);
+        color: getColor(secondary-color);
     }
 }

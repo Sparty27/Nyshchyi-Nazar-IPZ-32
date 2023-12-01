@@ -16,19 +16,19 @@
     &__link{
         transition: 300ms;
         display: inline-block;
-        fill: var(--social_link_color);
+        fill: getColor(social_link_color);
         padding: 16px 32px;
         width: 170px;
         height: 92px;
         border-radius: 4px;
-        border: 1px solid var(--social_link_color);
+        border: 1px solid getColor(social_link_color);
 
         &:hover,
         &:focus {
             transition: 300ms;
-            border-color: var(--accent-color);
-            color: var(--accent-color);
-            fill: var(--accent-color);
+            border-color: getColor(accent-color);
+            color: getColor(accent-color);
+            fill: getColor(accent-color);
         }
     }
 

@@ -4,13 +4,13 @@
     font-size: 26px;
     line-height: 1.17;
     letter-spacing: 0.78px;
-    color: var(--primary-color);
+    color: getColor(primary-color);
     text-decoration: none;
     margin-right: 93px;
 
     &__accent-text {
         transition: all 0.3s;
-        color: var(--accent-color);
-        fill: var(--accent-color);
+        color: getColor(accent-color);
+        fill: getColor(accent-color);
     }
 }

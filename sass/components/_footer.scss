@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--background-secondary-color);
+    background-color: getColor(background-secondary-color);
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -10,7 +10,7 @@
     }
 
     &__logo {
-        color: var(--background-primary-color);
+        color: getColor(background-primary-color);
         text-decoration: none;
         font-family: 'Raleway';
         font-weight: 700;
@@ -18,7 +18,7 @@
     }
 
     &__accent-text-footer-logo {
-        color: var(--accent-color);
+        color: getColor(accent-color);
     }
 
     &__contact-address {
@@ -43,7 +43,7 @@
         line-height: 1.14;
         letter-spacing: 0.42px;
         font-size: 14px;
-        color: var(--background-primary-color);
+        color: getColor(background-primary-color);
     }
 
     &__email,
@@ -52,12 +52,12 @@
         line-height: 1.14;
         letter-spacing: 0.42px;
         text-decoration: none;
-        color: var(--transperent-color);
+        color: getColor(transperent-color);
     }
 
     &__title {
         margin-bottom: 20px;
-        color: var(--background-primary-color);
+        color: getColor(background-primary-color);
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.42px;
@@ -66,7 +66,7 @@
 
     &__newsletter-title {
         margin-bottom: 20px;
-        color: var(--background-primary-color);
+        color: getColor(background-primary-color);
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.42px;
@@ -93,7 +93,7 @@
         background-color: rgba(33, 150, 243, 0.00);
         border: 1px solid rgba(255, 255, 255, 0.30);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        color: var(--background-primary-color);
+        color: getColor(background-primary-color);
     }
     
     &__form-button {
@@ -102,8 +102,8 @@
         font-size: 16px;
         line-height: 187.5%;
         letter-spacing: 0.96px;
-        color: var(--background-primary-color);
-        background: var(--accent-color);
+        color: getColor(background-primary-color);
+        background: getColor(accent-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         border: none;
@@ -130,7 +130,7 @@
     
     &__form-icon {
         position: absolute;
-        fill: var(--background-primary-color);
+        fill: getColor(background-primary-color);
         width: 24px;
         height: 24px;
         margin-left: 10px;

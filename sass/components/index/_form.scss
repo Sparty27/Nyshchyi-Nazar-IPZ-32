@@ -42,11 +42,11 @@
         height: 40px;
 
         &:focus {
-            outline: 1px solid var(--accent-color);
+            outline: 1px solid getColor(accent-color);
         }
 
         &:focus+.form__icon {
-            fill: var(--accent-color);
+            fill: getColor(accent-color);
         }
     }
 
@@ -62,7 +62,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:focus {
-            outline: 1px solid var(--accent-color);
+            outline: 1px solid getColor(accent-color);
         }
 
         &::placeholder {
@@ -86,7 +86,7 @@
     }
 
     &__link {
-        color: var(--accent-color);
+        color: getColor(accent-color);
         font-family: Roboto;
         font-size: 14px;
         font-style: normal;
@@ -121,14 +121,14 @@
         align-items: center;
         line-height: 171.43%;
         letter-spacing: 0.42px;
-        color: var(--gray);
+        color: gray;
         cursor: pointer;
 
         span {
             display: flex;
             width: 16px;
             height: 15px;
-            border: 2px solid var(--black-color);
+            border: 2px solid getColor(black-color);
             border-radius: 2px;
             margin-right: 8px;
             fill: transparent;
@@ -138,9 +138,9 @@
     }
     
     &__check:checked+.form__agree-label span {
-        background-color: var(--accent-color);
+        background-color: getColor(accent-color);
         border: none;
-        fill: var(--background-primary-color);
+        fill: getColor(background-primary-color);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -157,7 +157,7 @@
         min-height: 50px;
         border-radius: 4px;
         border: none;
-        background: var(--accent-color);
+        background: getColor(accent-color);
         color: #FFF;
         text-align: center;
         font-family: Roboto;

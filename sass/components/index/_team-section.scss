@@ -1,5 +1,5 @@
 .team-section {
-    background-color: var(--inactive-filter-color);
+    background-color: getColor(inactive-filter-color);
     padding: 94px 0;
 
     &__team-header{
@@ -18,7 +18,7 @@
     }
 
     &__employee {
-        background-color: var(--background-primary-color);
+        background-color: getColor(background-primary-color);
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     }
@@ -41,7 +41,7 @@
         letter-spacing: 0.48px;
         display: flex;
         justify-content: center;
-        color: var(--primary-color);
+        color: getColor(primary-color);
     }
 
     &__employee-name {
@@ -49,6 +49,6 @@
     }
 
     &__employee-job {
-        color: var(--secondary-color);
+        color: getColor(secondary-color);
     }
 }
