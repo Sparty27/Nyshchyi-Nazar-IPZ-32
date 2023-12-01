@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Студія</title>
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/modern-normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +15,22 @@
 <body>
   <header class="header">
     <div class="container">
-      <a href="index.html" class="logo"><span class="accent-text-logo">Web</span>Studio</a>
+      <a href="index.html" class="logo"><span class="logo__accent-text">Web</span>Studio</a>
       <nav>
-        <ul class="navigation-list">
-          <li><a href="index.html" class="navigation-button-active">Студія</a></li>
-          <li><a href="portfolio.html" class="navigation-button">Портфоліо</a></li>
-          <li><a href="#" class="navigation-button">Контакти</a></li>
+        <ul class="header__navigation-list">
+          <li><a href="index.html" class="header__navigation-button-active">Студія</a></li>
+          <li><a href="portfolio.html" class="header__navigation-button">Портфоліо</a></li>
+          <li><a href="#" class="header__navigation-button">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="contact-info">
+      <ul class="header__contact-info">
         <li>
-          <a class="email" href="mailto:info@devstudio.com"><svg class="email-icon" width="16" height="12">
+          <a class="header__email" href="mailto:info@devstudio.com"><svg class="header__email-icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope">
             </svg>info@devstudio.com</a>
         </li>
         <li>
-          <a class="tel" href="tel:+380961111111"><svg class="phone-icon" width="10" height="16">
+          <a class="header__tel" href="tel:+380961111111"><svg class="header__phone-icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone">
             </svg>+38 096 111 11 11</a>
         </li>
@@ -39,58 +39,58 @@
   </header>
   <main>
     <section class="hero">
-      <div class="hero-container container">
-        <h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+      <div class="hero__container container">
+        <h1 class="hero__header">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <section class="main-content">
       <div class="container">
         <h2 hidden>Про нас</h2>
-        <ul class="feature-list">
-          <li class="feature">
-            <div class="feature-background">
-              <svg class="feature-icon">
+        <ul class="main-content__feature-list">
+          <li class="main-content__feature">
+            <div class="main-content__feature-background">
+              <svg class="main-content__feature-icon">
                 <use href="./images/icons.svg#icon-attention-to-detail">
               </svg>
             </div>
-            <h3 class="feature-label">Увага до деталей</h3>
-            <p class="feature-description">
+            <h3 class="main-content__feature-label">Увага до деталей</h3>
+            <p class="main-content__feature-description">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li class="feature">
-            <div class="feature-background">
-              <svg class="feature-icon">
+          <li class="main-content__feature">
+            <div class="main-content__feature-background">
+              <svg class="main-content__feature-icon">
                 <use href="./images/icons.svg#icon-punctuality">
               </svg>
             </div>
-            <h3 class="feature-label">Пунктуальність</h3>
-            <p class="feature-description">
+            <h3 class="main-content__feature-label">Пунктуальність</h3>
+            <p class="main-content__feature-description">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li class="feature">
-            <div class="feature-background">
-              <svg class="feature-icon">
+          <li class="main-content__feature">
+            <div class="main-content__feature-background">
+              <svg class="main-content__feature-icon">
                 <use href="./images/icons.svg#icon-planning">
               </svg>
             </div>
-            <h3 class="feature-label">Планування</h3>
-            <p class="feature-description">
+            <h3 class="main-content__feature-label">Планування</h3>
+            <p class="main-content__feature-description">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="feature">
-            <div class="feature-background">
-              <svg class="feature-icon">
+          <li class="main-content__feature">
+            <div class="main-content__feature-background">
+              <svg class="main-content__feature-icon">
                 <use href="./images/icons.svg#icon-technologies">
               </svg>
             </div>
-            <h3 class="feature-label">Сучасні технології</h3>
-            <p class="feature-description">
+            <h3 class="main-content__feature-label">Сучасні технології</h3>
+            <p class="main-content__feature-description">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
