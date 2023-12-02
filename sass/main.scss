@@ -1,0 +1,31 @@
+@import "./base/modern-normalize";
+@import "./utils/variables";
+@import "./base/body";
+@import "./base/reset";
+
+/* HEADER */
+
+@import "./components/header";
+@import "./components/logo";
+
+/* MAIN */
+
+@import "./components/index/hero";
+@import "./components/index/main-content";
+@import "./components/index/development";
+@import "./components/index/team-section";
+@import "./components/social-team-links";
+@import "./components/index/clients";
+
+/* FOOTER */
+
+@import "./components/footer";
+
+/* PORTFOLIO-MAIN */
+
+@import "./components/portfolio/project-area";
+
+/* Modal */
+
+@import "./components/index/modal";
+@import "./components/index/form";

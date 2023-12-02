@@ -1,0 +1,16 @@
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.78px;
+    color: getColor(primary-color);
+    text-decoration: none;
+    margin-right: 93px;
+
+    &__accent-text {
+        transition: all 0.3s;
+        color: getColor(accent-color);
+        fill: getColor(accent-color);
+    }
+}

@@ -1,0 +1,54 @@
+.team-section {
+    background-color: getColor(inactive-filter-color);
+    padding: 94px 0;
+
+    &__team-header{
+        line-height: 1.17;
+        letter-spacing: 1.08px;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__team-list{
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__employee {
+        background-color: getColor(background-primary-color);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    img {
+        width: 270px;
+        height: 260px; 
+    }
+
+    &__employee-name-job {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__employee-name,
+    &__employee-job {
+        font-size: 16px;
+        line-height: 1.17;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        display: flex;
+        justify-content: center;
+        color: getColor(primary-color);
+    }
+
+    &__employee-name {
+        margin-bottom: 10px;
+    }
+
+    &__employee-job {
+        color: getColor(secondary-color);
+    }
+}
