@@ -2,7 +2,7 @@
     background-color: getColor(inactive-filter-color);
     padding: 94px 0;
 
-    &__team-header{
+    &__header{
         line-height: 1.17;
         letter-spacing: 1.08px;
         font-weight: 700;
@@ -11,7 +11,7 @@
         margin-bottom: 50px;
     }
 
-    &__team-list{
+    &__list{
         list-style-type: none;
         display: flex;
         gap: 30px;
@@ -28,13 +28,13 @@
         height: 260px; 
     }
 
-    &__employee-name-job {
+    &__name-job {
         padding-top: 30px;
         padding-bottom: 30px;
     }
 
-    &__employee-name,
-    &__employee-job {
+    &__name,
+    &__job {
         font-size: 16px;
         line-height: 1.17;
         font-weight: 500;
@@ -44,11 +44,11 @@
         color: getColor(primary-color);
     }
 
-    &__employee-name {
+    &__name {
         margin-bottom: 10px;
     }
 
-    &__employee-job {
+    &__job {
         color: getColor(secondary-color);
     }
 }

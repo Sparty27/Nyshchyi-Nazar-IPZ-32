@@ -1,7 +1,7 @@
 .development {
     padding: 94px 0;
 
-    &__dev-stack-header {
+    &__header {
         line-height: 1.17;
         letter-spacing: 1.08px;
         font-weight: 700;
@@ -10,18 +10,18 @@
         margin-bottom: 50px;
     }
 
-    &__dev-stack-list {
+    &__list {
         display: flex;
         justify-content: center;
         gap: 30px;
         list-style-type: none;
     }
 
-    &__dev-stack-list-item {
+    &__item {
         position: relative;
     }
 
-    &__item-photo-description {
+    &__description {
         position: absolute;
         bottom: 1%;
         width: 100%;

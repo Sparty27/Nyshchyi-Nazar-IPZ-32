@@ -17,7 +17,7 @@
         font-size: 26px; 
     }
 
-    &__accent-text-footer-logo {
+    &__text-footer-logo {
         color: getColor(accent-color);
     }
 
@@ -109,12 +109,12 @@
         border: none;
         cursor: pointer;
     
-        display: inline;
+        display: flex;
         align-items: center;
-        min-width: 200px;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-right: 28px;
+        padding-left: 28px;
         position: relative;
     
         transition-property: background-color;
@@ -127,13 +127,16 @@
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         }
     }
+
+    &__button-text {
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+    }
     
     &__form-icon {
-        position: absolute;
         fill: getColor(background-primary-color);
         width: 24px;
         height: 24px;
         margin-left: 10px;
-        top: 12px;
     }
 }

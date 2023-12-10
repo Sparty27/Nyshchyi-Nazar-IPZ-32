@@ -1,11 +1,11 @@
-.social-team-links {
+.social-links {
     list-style-type: none;
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 16px;
 
-    &__team-social {
+    &__team {
         transition: 300ms;
         display: inline-block;
         border-radius: 50%;
@@ -22,16 +22,16 @@
         }
     }
 
-    &__social-icon {
+    &__icon {
         width: 20px;
         height: 20px;
     }
 
-    &__social-item {
+    &__item {
         border-radius: 50%;
     }
 
-    &__foot-link {
+    &__link {
         transition: 300ms;
         display: inline-block;
         padding: 12px 12px;
