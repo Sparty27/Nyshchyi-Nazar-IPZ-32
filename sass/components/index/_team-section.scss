@@ -1,31 +1,63 @@
 .team-section {
     background-color: getColor(inactive-filter-color);
-    padding: 94px 0;
+    padding: 60px 0;
+    @include match(desktop) {
+        padding: 94px 0;
+    }
 
     &__header{
         line-height: 1.17;
-        letter-spacing: 1.08px;
+        letter-spacing: 0.84px;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        @include match(desktop) {
+            margin-bottom: 50px;
+            font-size: 36px;
+            letter-spacing: 1.08px;
+        }
     }
 
     &__list{
         list-style-type: none;
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
+
+        @include match(tablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        
+          @include match(desktop) {
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+          }
     }
 
     &__employee {
         background-color: getColor(background-primary-color);
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    }
 
-    img {
-        width: 270px;
-        height: 260px; 
+        @include match(mobile) {
+            max-width: 450px;
+            max-height: 622px;
+          }
+        
+          @include match(tablet) {
+            max-width: 354px;
+            max-height: 536px;
+          }
+        
+          @include match(desktop) {
+            max-width: 270px;
+            max-height: 428px;
+          }
     }
 
     &__name-job {

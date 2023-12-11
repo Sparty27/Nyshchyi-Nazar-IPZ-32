@@ -1,24 +1,54 @@
 .clients {
-    padding: 94px 0px;
+    padding: 60px 0;
+    @include match(desktop) {
+        padding: 94px 0;
+    }
 
     &__title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         text-align: center;
-        font-size: 36px;
-        letter-spacing: 1.08px;
+        font-size: 28px;
+        letter-spacing: 0.84px;
+
+        
+        @include match(desktop) {
+            margin-bottom: 50px;
+            font-size: 36px;
+            letter-spacing: 1.08px;
+        }
     }
 
     &__list {
         display: flex;
-        gap: 30px;  
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        flex-wrap: wrap;
+        max-width: 480px;
+
+          @include match(tablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 768px;
+          }
+        
+          @include match(desktop) {
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+          }
     }
 
     &__link{
         transition: 300ms;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         fill: getColor(social_link_color);
         padding: 16px 32px;
-        width: 170px;
+        width: 210px;
         height: 92px;
         border-radius: 4px;
         border: 1px solid getColor(social_link_color);
@@ -29,6 +59,15 @@
             border-color: getColor(accent-color);
             color: getColor(accent-color);
             fill: getColor(accent-color);
+        }
+
+        @include match(tablet) {
+            flex-basis: calc((100% - 60px) / 2);
+            max-width: 226px;
+        }
+
+        @include match(desktop) {
+            max-width: 170px;
         }
     }
 

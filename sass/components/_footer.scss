@@ -4,9 +4,59 @@
     padding-bottom: 60px;
 
     &__contacts {
-        display: flex;
-        align-items: baseline;
-        gap: 94px;
+        text-align: center;
+
+        @include match(tablet) {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+  
+        @include match(desktop) {
+          flex-wrap: nowrap;
+          text-align: start;
+          align-items: baseline;
+          justify-content: space-between;
+          gap: 94px;
+        }
+    }
+
+    &__info {
+      //flex-basis: calc((100% - 60px)/2);
+      margin-bottom: 60px;
+      text-align: center;
+    
+      @include match(tablet) {
+        flex-basis: 50%;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    
+      @include match(desktop) {
+        flex-basis: content;
+        margin-bottom: 0px;
+        text-align: start;
+      }
+    }
+
+    &__social {
+        margin-bottom: 60px;
+
+        @include match(tablet) {
+            flex-basis: 50%;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+          }
+    
+          @include match(desktop) {
+            flex-basis: content;
+            margin-bottom: 0px;
+          }
+    }
+
+    &__newsletter{
+        flex-grow: 1;
     }
 
     &__logo {
@@ -29,6 +79,11 @@
         all: initial;
         font-family: inherit;
         flex-direction: column;
+        text-align: center;
+
+        @include match(desktop) {
+            text-align: start;
+        }
     }
 
     &__contact-info li {
@@ -74,8 +129,13 @@
     }
 
     &__form{
-        min-width: 570px;
+        min-width: 450px;
         display: flex;
+        flex-direction: column;
+
+        @include match(desktop) {
+            flex-direction: row;
+        }
     }
     
     &__form-input {
@@ -87,6 +147,9 @@
         font-size: 16px;
         line-height: 125%;
         letter-spacing: 0.48px;
+        
+        min-width: 450px;
+        margin: 0 auto 20px auto;
     
         max-height: 50px;
         border-radius: 4px;
@@ -94,10 +157,18 @@
         border: 1px solid rgba(255, 255, 255, 0.30);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         color: getColor(background-primary-color);
+
+        @include match(desktop) {
+            max-width: 358px;
+            min-width: 1px;
+            margin: 0;
+        }
     }
     
     &__form-button {
-        margin-left: 12px;
+        max-width: 200px;
+        margin: 0 auto;
+
         font-weight: 700;
         font-size: 16px;
         line-height: 187.5%;
@@ -125,6 +196,10 @@
         &:focus {
             background: #188CE8;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        @include match(desktop) {
+            margin-left: 12px;
         }
     }
 

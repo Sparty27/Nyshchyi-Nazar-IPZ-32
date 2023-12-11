@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Студія</title>
 
-  
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
 </head>
 
 <body>
@@ -27,7 +27,8 @@
       </nav>
       <ul class="header__contact-info">
         <li>
-          <a class="header__email" href="mailto:info@devstudio.com"><svg class="header__email-icon" width="16" height="12">
+          <a class="header__email" href="mailto:info@devstudio.com"><svg class="header__email-icon" width="16"
+              height="12">
               <use href="./images/icons.svg#icon-envelope">
             </svg>info@devstudio.com</a>
         </li>
@@ -124,7 +125,22 @@
         <h2 class="team-section__header">Наша команда</h2>
         <ul class="team-section__list">
           <li class="team-section__employee">
-            <img src="images/worker1.jpg" alt="Ігор Дем'яненко" width="300" />
+            <picture>
+              <source srcset="
+                  ./images/team/team1-demianenko-270.jpg 1x,
+                  ./images/team/team1-demianenko-270@2.jpg 2x
+                " media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/jpg" />
+              <source srcset="
+                ./images/team/team1-demianenko-354.jpg 1x,
+                ./images/team/team1-demianenko-354@2.jpg 2x
+                " media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/jpg" />
+              <source srcset="
+                ./images/team/team1-demianenko-450.jpg 1x,
+                ./images/team/team1-demianenko-450@2.jpg 2x
+                " media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/jpg" />
+              <img srcset="./images/team/team1-demianenko-270.jpg 1x, ./images/team/team1-demianenko-270@2.jpg 2x"
+                src="./images/team/team1-demianenko-270.jpg" alt="Фото Ігора Дем'яненка" width="270" height="260" />
+            </picture>
             <div class="team-section__name-job">
               <h3 class="team-section__name">Ігор Дем'яненко</h3>
               <p class="team-section__job">Product Designer</p>
@@ -160,7 +176,22 @@
             </div>
           </li>
           <li class="team-section__employee">
-            <img src="images/worker2.jpg" alt="Jльга Рєпіна" width="300" />
+            <picture>
+              <source srcset="
+                  ./images/team/team2-repina-270.jpg 1x,
+                  ./images/team/team2-repina-270@2.jpg 2x
+                " media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/jpg" />
+              <source srcset="
+                ./images/team/team2-repina-354.jpg 1x,
+                ./images/team/team2-repina-354@2.jpg 2x
+                " media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/jpg" />
+              <source srcset="
+                ./images/team/team2-repina-450.jpg 1x,
+                ./images/team/team2-repina-450@2.jpg 2x
+                " media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/jpg" />
+              <img srcset="./images/team/team2-repina-270.jpg 1x, ./images/team/team2-repina-270@2.jpg 2x"
+                src="./images/team/team2-repina-270.jpg" alt="Фото Ольги Рєпіни" width="270" height="260" />
+            </picture>
             <div class="team-section__name-job">
               <h3 class="team-section__name">Ольга Рєпіна</h3>
               <p class="team-section__job">Frontend Developer</p>
@@ -196,7 +227,22 @@
             </div>
           </li>
           <li class="team-section__employee">
-            <img src="images/worker3.jpg" alt="Микола Тарасов" width="300" />
+            <picture>
+              <source srcset="
+                  ./images/team/team3-tarasov-270.jpg 1x,
+                  ./images/team/team3-tarasov-270@2.jpg 2x
+                " media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/jpg" />
+              <source srcset="
+                ./images/team/team3-tarasov-354.jpg 1x,
+                ./images/team/team3-tarasov-354@2.jpg 2x
+                " media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/jpg" />
+              <source srcset="
+                ./images/team/team3-tarasov-450.jpg 1x,
+                ./images/team/team3-tarasov-450@2.jpg 2x
+                " media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/jpg" />
+              <img srcset="./images/team/team3-tarasov-270.jpg 1x, ./images/team/team3-tarasov-270@2.jpg 2x"
+                src="./images/team/team3-tarasov-270.jpg" alt="Фото Миколи Тарасова" width="270" height="260" />
+            </picture>
             <div class="team-section__name-job">
               <h3 class="team-section__name">Микола Тарасов</h3>
               <p class="team-section__job">Marketing</p>
@@ -232,7 +278,22 @@
             </div>
           </li>
           <li class="team-section__employee">
-            <img src="images/worker4.jpg" alt="Михайло Єрмаков" width="300" />
+            <picture>
+              <source srcset="
+                  ./images/team/team4-ermakov-270.jpg 1x,
+                  ./images/team/team4-ermakov-270@2.jpg 2x
+                " media="(min-width: 1200px)" sizes="270px" width="270" height="260" type="image/jpg" />
+              <source srcset="
+                ./images/team/team4-ermakov-354.jpg 1x,
+                ./images/team/team4-ermakov-354@2.jpg 2x
+                " media="(min-width: 768px)" sizes="354px" width="354" height="374" type="image/jpg" />
+              <source srcset="
+                ./images/team/team4-ermakov-450.jpg 1x,
+                ./images/team/team4-ermakov-450@2.jpg 2x
+                " media="(max-width: 767px)" sizes="450px" width="450" height="460" type="image/jpg" />
+              <img srcset="./images/team/team4-ermakov-270.jpg 1x, ./images/team/team4-ermakov-270@2.jpg 2x"
+                src="./images/team/team4-ermakov-270.jpg" alt="Фото Михайла Єрмакова" width="270" height="260" />
+            </picture>
             <div class="team-section__name-job">
               <h3 class="team-section__name">Михайло Єрмаков</h3>
               <p class="team-section__job">UI Designer</p>
@@ -327,8 +388,8 @@
         <address class="footer__contact-address">
           <ul class="footer__contact-info">
             <li>
-              <a class="footer__studio-address" href="https://www.google.com/maps?q=50.4267485,30.5381659" target="_blank"
-                rel="nofollow">м. Київ, пр-т Лесі Українки, 26
+              <a class="footer__studio-address" href="https://www.google.com/maps?q=50.4267485,30.5381659"
+                target="_blank" rel="nofollow">м. Київ, пр-т Лесі Українки, 26
               </a>
             </li>
             <li><a class="footer__email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -336,7 +397,7 @@
           </ul>
         </address>
       </div>
-      <div class="">
+      <div class="footer__social">
         <h2 class="footer__title">Приєднуйтесь</h2>
         <ul class="social-links">
           <li class="social-links__item">
@@ -373,7 +434,8 @@
         <h2 class="footer__newsletter-title">Підпишіться на розсилку</h2>
         <form class="footer__form">
           <input type="email" name="footer-email" placeholder="E-mail" class="footer__form-input">
-          <button type="submit" class="footer__form-button"><span class="footer__button-text">Підписатися</span> <svg class="footer__form-icon">
+          <button type="submit" class="footer__form-button"><span class="footer__button-text">Підписатися</span> <svg
+              class="footer__form-icon">
               <use href="./images/icons.svg#icon-send"></use>
             </svg></button>
         </form>
@@ -386,7 +448,7 @@
       <button type="button" class="modal__button" data-modal-close> <svg class="modal__icon">
           <use href="./images/icons.svg#icon-close"></use>
         </svg></button>
-        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+      <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
       <form class="form">
         <div class="form__contacts">
           <div class="form__contact">
