@@ -2,6 +2,11 @@
     .container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    .active {
+        color: getColor(accent-color)
     }
 
     background-color: getColor(background-primary-color);

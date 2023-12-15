@@ -6,6 +6,10 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
 
+    &.no-scroll {
+        overflow: hidden; 
+      }
+
     @include match(mobile) {
         overflow-x: hidden;
     }
