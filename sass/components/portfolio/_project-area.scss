@@ -1,13 +1,29 @@
 .project-area {
-    padding: 94px 0px;
+    padding: 60px 0;
+    @include match(desktop) {
+        padding: 94px 0;
+    }
 
     &__filter-list {
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 8px;
-        margin-bottom: 50px;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 40px;
+
+        @include match(tablet) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 30px;
+
+        }
+        @include match(desktop) {
+            margin-bottom: 50px;
+
+        }
     }
 
     &__filter{
@@ -35,16 +51,48 @@
 
     &__list{
         list-style-type: none;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
+
+        @include match(tablet) {
+            flex-wrap: nowrap;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        @include match(desktop) {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     &__item{
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
         border: 1px solid #EEE;
+        // width: auto;
+
+        @include match(mobile) {
+            max-width: 450px;
+            max-height: 404px;
+            margin: 0px;
+          }
+        
+          @include match(tablet) {
+            flex-basis: calc((100% - 30px) / 2);
+            max-width: 354px;
+            max-height: 440px;
+            margin: 0px;
+          }
+        
+          @include match(desktop) {
+            flex-basis: calc((100% - 60px) / 3);
+            max-width: 370px;
+            max-height: 404px;
+            margin: 0px;
+          }
+
 
         &:hover{
             transition: 300ms;
