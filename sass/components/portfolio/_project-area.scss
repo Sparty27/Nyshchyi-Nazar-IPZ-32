@@ -146,6 +146,16 @@
         color: getColor(background-primary-color);
         padding: 63px 24px;
         background-color: rgba(33, 150, 243, 0.8);
+
+        @media screen and (max-width: 378px) {
+            font-size: 15px;
+        }
+        @media screen and (max-width: 479px) {
+            padding-top: 50px;
+        }
+        @media screen and (max-width: 768px) {
+            padding-bottom: 100%;  
+        }
     }
 
     &__details {
