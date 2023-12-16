@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  
-  <link rel="stylesheet" href="css/main.min.css" />
+
+  <link rel="stylesheet" href="css/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
 </head>
 
 <body>
@@ -26,7 +26,8 @@
       </nav>
       <ul class="header__contact-info">
         <li>
-          <a class="header__email" href="mailto:info@devstudio.com"><svg class="header__email-icon" width="16" height="12">
+          <a class="header__email" href="mailto:info@devstudio.com"><svg class="header__email-icon" width="16"
+              height="12">
               <use href="./images/icons.svg#icon-envelope">
             </svg>info@devstudio.com</a>
         </li>
@@ -34,6 +35,55 @@
           <a class="header__tel" href="tel:+380961111111"><svg class="header__phone-icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone">
             </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
+      <button class="mobile_button" type="button" data-menu-button aria-expanded="false">
+        <svg class="mobile_button-icon">
+          <use class="mobile_button--close" href="./images/icons.svg#icon-burger-close"></use>
+          <use class="mobile_button--open" href="./images/icons.svg#icon-burger-open"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile" data-menu>
+      <nav class="mobile__nav">
+        <ul class="mobile__nav-list">
+          <li class="mobile__nav-item">
+            <a href="./index.html" class="mobile__nav-link">Студія</a>
+          </li>
+          <li class="mobile__nav-item">
+            <a href="./portfolio.html" class="mobile__nav-link active">Портфоліо</a>
+          </li>
+          <li class="mobile__nav-item">
+            <a href="" class="mobile__nav-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile__contacts-list">
+        <li class="mobile__contacts-item">
+          <a
+            class="mobile__contacts-link link mobile__contacts-link--blue"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile__contacts-item">
+          <a class="mobile__contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile__social-list">
+        <li class="mobile__social-item">
+          <a class="mobile__social-link" href="">Instagram</a>
+        </li>
+        <li class="mobile__social-item">
+          <a class="mobile__social-link" href="">Twitter</a>
+        </li>
+        <li class="mobile__social-item">
+          <a class="mobile__social-link" href="">Facebook</a>
+        </li>
+        <li class="mobile__social-item">
+          <a class="mobile__social-link" href="">LinkedIn</a>
         </li>
       </ul>
     </div>
@@ -53,7 +103,18 @@
           <li class="project-area__item">
             <a href="" class="project-area__project">
               <div class="project-area__product-img">
-                <img src="images/img_portfolio.jpg" alt="Сайт на ноутбуку" width="370">
+                <picture>
+                  <source
+                    srcset="./images/portfolio/portfolio1-technokryak-370.jpg 1x, ./images/portfolio/portfolio1-technokryak-370@2.jpg 2x"
+                    media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                  <source
+                    srcset="./images/portfolio/portfolio1-technokryak-354.jpg 1x, ./images/portfolio/portfolio1-technokryak-354@2.jpg 2x"
+                    media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                  <img
+                    srcset="./images/portfolio/portfolio1-technokryak-450.jpg 1x, ./images/portfolio/portfolio1-technokryak-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio1-technokryak-450.jpg"
+                    alt="Ноутбук із зображенням команди співробітників" width="450" height="294" />
+                </picture>
                 <div class="project-area__section-description">
                   <p class="project-area__text-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -69,7 +130,19 @@
           </li>
           <li class="project-area__item">
             <a href="" class="project-area__project">
-              <div class="project-area__product-img"><img src="images/img_portfolio-1.jpg" alt="Гра в баскетбол" width="370">
+              <div class="project-area__product-img">
+                <picture>
+                  <source
+                    srcset="./images/portfolio/portfolio2-neworlean-370.jpg 1x, ./images/portfolio/portfolio2-neworlean-370@2.jpg 2x"
+                    media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                  <source
+                    srcset="./images/portfolio/portfolio2-neworlean-354.jpg 1x, ./images/portfolio/portfolio2-neworlean-354@2.jpg 2x"
+                    media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                  <img
+                    srcset="./images/portfolio/portfolio2-neworlean-450.jpg 1x, ./images/portfolio/portfolio2-neworlean-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio2-neworlean-450.jpg"
+                    alt="Постер з гравцями баскетбольних команд New Orlean та Golden Star" width="450" height="294" />
+                </picture>
                 <div class="project-area__section-description">
                   <p class="project-area__text-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -85,7 +158,19 @@
           </li>
           <li class="project-area__item">
             <a href="" class="project-area__project">
-              <div class="project-area__product-img"><img src="images/img_portfolio-2.jpg" alt="Лого Seafood" width="370">
+              <div class="project-area__product-img">
+                <picture>
+                  <source
+                    srcset="./images/portfolio/portfolio3-seafood-370.jpg 1x, ./images/portfolio/portfolio3-seafood-370@2.jpg 2x"
+                    media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                  <source
+                    srcset="./images/portfolio/portfolio3-seafood-354.jpg 1x, ./images/portfolio/portfolio3-seafood-354@2.jpg 2x"
+                    media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                  <img
+                    srcset="./images/portfolio/portfolio3-seafood-450.jpg 1x, ./images/portfolio/portfolio3-seafood-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio3-seafood-450.jpg" alt="Ресторан з морепродуктами Seafood"
+                    width="450" height="294" />
+                </picture>
                 <div class="project-area__section-description">
                   <p class="project-area__text-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -101,7 +186,19 @@
           </li>
           <li class="project-area__item">
             <a href="" class="project-area__project">
-              <div class="project-area__product-img"><img src="images/img_portfolio-3.jpg" alt="Навушники" width="370">
+              <div class="project-area__product-img">
+                <picture>
+                  <source
+                    srcset="./images/portfolio/portfolio4-prime-370.jpg 1x, ./images/portfolio/portfolio4-prime-370@2.jpg 2x"
+                    media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                  <source
+                    srcset="./images/portfolio/portfolio4-prime-354.jpg 1x, ./images/portfolio/portfolio4-prime-354@2.jpg 2x"
+                    media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                  <img
+                    srcset="./images/portfolio/portfolio4-prime-450.jpg 1x, ./images/portfolio/portfolio4-prime-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio4-prime-450.jpg" alt="Зображення навушників" width="450"
+                    height="294" />
+                </picture>
                 <div class="project-area__section-description">
                   <p class="project-area__text-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -117,7 +214,19 @@
           </li>
           <li class="project-area__item">
             <a href="" class="project-area__project">
-              <div class="project-area__product-img"><img src="images/img_portfolio-4.jpg" alt="Дві коробки" width="370">
+              <div class="project-area__product-img">
+                <picture>
+                  <source
+                    srcset="./images/portfolio/portfolio5-boxes-370.jpg 1x, ./images/portfolio/portfolio5-boxes-370@2.jpg 2x"
+                    media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                  <source
+                    srcset="./images/portfolio/portfolio5-boxes-354.jpg 1x, ./images/portfolio/portfolio5-boxes-354@2.jpg 2x"
+                    media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                  <img
+                    srcset="./images/portfolio/portfolio5-boxes-450.jpg 1x, ./images/portfolio/portfolio5-boxes-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio5-boxes-450.jpg" alt="Зображення двох коробок" width="450"
+                    height="294" />
+                </picture>
                 <div class="project-area__section-description">
                   <p class="project-area__text-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -133,8 +242,19 @@
           </li>
           <li class="project-area__item">
             <a href="" class="project-area__project">
-              <div class="project-area__product-img"><img src="images/img_portfolio-5.jpg" alt="Сайт Inspiration has no borders"
-                  width="370">
+              <div class="project-area__product-img">
+                <picture>
+                  <source
+                    srcset="./images/portfolio/portfolio6-inspiration-370.jpg 1x, ./images/portfolio/portfolio6-inspiration-370@2.jpg 2x"
+                    media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                  <source
+                    srcset="./images/portfolio/portfolio6-inspiration-354.jpg 1x, ./images/portfolio/portfolio6-inspiration-354@2.jpg 2x"
+                    media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                  <img
+                    srcset="./images/portfolio/portfolio6-inspiration-450.jpg 1x, ./images/portfolio/portfolio6-inspiration-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio6-inspiration-450.jpg"
+                    alt="Монітор з надписом Inspiration has no Borders" width="450" height="294" />
+                </picture>
                 <div class="project-area__section-description">
                   <p class="project-area__text-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -150,8 +270,19 @@
           </li>
           <li class="project-area__item">
             <a href="" class="project-area__project">
-              <div class="project-area__product-img"><img src="images/img_portfolio-6.jpg" alt="Книга I'am Limited Edition"
-                  width="370">
+              <div class="project-area__product-img">
+                <picture>
+                  <source
+                    srcset="./images/portfolio/portfolio7-limited-370.jpg 1x, ./images/portfolio/portfolio7-limited-370@2.jpg 2x"
+                    media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                  <source
+                    srcset="./images/portfolio/portfolio7-limited-354.jpg 1x, ./images/portfolio/portfolio7-limited-354@2.jpg 2x"
+                    media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                  <img
+                    srcset="./images/portfolio/portfolio7-limited-450.jpg 1x, ./images/portfolio/portfolio7-limited-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio7-limited-450.jpg" alt="Зображення журналу видання Limited Edition"
+                    width="450" height="294" />
+                </picture>
                 <div class="project-area__section-description">
                   <p class="project-area__text-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -167,7 +298,18 @@
           </li>
           <li class="project-area__item">
             <a href="" class="project-area__project">
-              <div class="project-area__product-img"><img src="images/img_portfolio-7.jpg" alt="Значок Проєкт LAB" width="370">
+              <div class="project-area__product-img">
+                <picture>
+                  <source
+                    srcset="./images/portfolio/portfolio8-lab-370.jpg 1x, ./images/portfolio/portfolio8-lab-370@2.jpg 2x"
+                    media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                  <source
+                    srcset="./images/portfolio/portfolio8-lab-354.jpg 1x, ./images/portfolio/portfolio8-lab-354@2.jpg 2x"
+                    media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                  <img
+                    srcset="./images/portfolio/portfolio8-lab-450.jpg 1x, ./images/portfolio/portfolio8-lab-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio8-lab-450.jpg" alt="Зображення лейблу" width="450" height="294" />
+                </picture>
                 <div class="project-area__section-description">
                   <p class="project-area__text-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -183,8 +325,19 @@
           </li>
           <li class="project-area__item">
             <a href="" class="project-area__project">
-              <div class="project-area__product-img"><img src="images/img_portfolio-8.jpg" alt="Додаток Growing Business на ноутбуку"
-                  width="370">
+              <div class="project-area__product-img">
+                <picture>
+                  <source
+                    srcset="./images/portfolio/portfolio9-growing-370.jpg 1x, ./images/portfolio/portfolio9-growing-370@2.jpg 2x"
+                    media="(min-width: 1200px)" sizes="370px" width="370" height="294" type="image/jpg">
+                  <source
+                    srcset="./images/portfolio/portfolio9-growing-354.jpg 1x, ./images/portfolio/portfolio9-growing-354@2.jpg 2x"
+                    media="(min-width: 768px)" sizes="354px" width="354" height="294" type="image/jpg">
+                  <img
+                    srcset="./images/portfolio/portfolio9-growing-450.jpg 1x, ./images/portfolio/portfolio9-growing-450@2.jpg 2x"
+                    src="./images/portfolio/portfolio9-growing-450.jpg"
+                    alt="Ноутбук із зображенням сайту Growing Business" width="450" height="294" />
+                </picture>
                 <div class="project-area__section-description">
                   <p class="project-area__text-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -205,12 +358,12 @@
   <footer class="footer">
     <div class="footer__contacts container">
       <div class="footer__info">
-        <a href="#" class="footer__logo"><span class="footer__accent-text-footer-logo">Web</span>Studio</a>
+        <a href="#" class="footer__logo"><span class="footer__text-footer-logo">Web</span>Studio</a>
         <address class="footer__contact-address">
           <ul class="footer__contact-info">
             <li>
-              <a class="footer__studio-address" href="https://www.google.com/maps?q=50.4267485,30.5381659" target="_blank"
-                rel="nofollow">м. Київ, пр-т Лесі Українки, 26
+              <a class="footer__studio-address" href="https://www.google.com/maps?q=50.4267485,30.5381659"
+                target="_blank" rel="nofollow">м. Київ, пр-т Лесі Українки, 26
               </a>
             </li>
             <li><a class="footer__email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -218,33 +371,33 @@
           </ul>
         </address>
       </div>
-      <div class="">
+      <div class="footer__social">
         <h2 class="footer__title">Приєднуйтесь</h2>
-        <ul class="social-team-links">
-          <li class="social-team-links__social-item">
-            <a class="social-team-links__foot-link" href="https://instagram.com" target="_blank">
-              <svg class="social-team-links__social-icon">
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://instagram.com" target="_blank">
+              <svg class="social-links__icon">
                 <use href="./images/icons.svg#icon-instagram">
               </svg>
             </a>
           </li>
-          <li class="social-team-links__social-item">
-            <a class="social-team-links__foot-link" href="https://twitter.com" target="_blank">
-              <svg class="social-team-links__social-icon">
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://twitter.com" target="_blank">
+              <svg class="social-links__icon">
                 <use href="./images/icons.svg#icon-twitter">
               </svg>
             </a>
           </li>
-          <li class="social-team-links__social-item">
-            <a class="social-team-links__foot-link" href="https://facebook.com" target="_blank">
-              <svg class="social-team-links__social-icon">
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://facebook.com" target="_blank">
+              <svg class="social-links__icon">
                 <use href="./images/icons.svg#icon-facebook">
               </svg>
             </a>
           </li>
-          <li class="social-team-links__social-item">
-            <a class="social-team-links__foot-link" href="https://linkedin.com" target="_blank">
-              <svg class="social-team-links__social-icon">
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://linkedin.com" target="_blank">
+              <svg class="social-links__icon">
                 <use href="./images/icons.svg#icon-linkedin">
               </svg>
             </a>
@@ -255,13 +408,17 @@
         <h2 class="footer__newsletter-title">Підпишіться на розсилку</h2>
         <form class="footer__form">
           <input type="email" name="footer-email" placeholder="E-mail" class="footer__form-input">
-          <button type="submit" class="footer__form-button">Підписатися <svg class="footer__form-icon">
+          <button type="submit" class="footer__form-button"><span class="footer__button-text">Підписатися</span> <svg
+              class="footer__form-icon">
               <use href="./images/icons.svg#icon-send"></use>
             </svg></button>
         </form>
       </div>
     </div>
   </footer>
+
+  <script src="./js/mobile-nav.js"></script>
+  <script src="./js/filters.js"></script>
 </body>
 
 </html>

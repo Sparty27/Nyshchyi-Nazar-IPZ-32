@@ -1,17 +1,19 @@
 @import "./base/modern-normalize";
 @import "./utils/variables";
-@import "./base/body";
 @import "./base/reset";
+@import "./utils/mixin";
+@import "./base/body";
 
 /* HEADER */
 
 @import "./components/header";
 @import "./components/logo";
+@import "./components/mobile-nav";
 
 /* MAIN */
 
 @import "./components/index/hero";
-@import "./components/index/main-content";
+@import "./components/index/features";
 @import "./components/index/development";
 @import "./components/index/team-section";
 @import "./components/social-team-links";

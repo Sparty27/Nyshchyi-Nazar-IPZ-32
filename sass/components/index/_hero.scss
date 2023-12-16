@@ -3,27 +3,58 @@
     url("../images/Img.jpg");
     background-size: cover;
     background-position: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @include match(retina) {
+        padding: 118px 0;
+        //image path
+    }
+
+    @include match(tablet) {
+        padding: 118px 0;
+        //image path
+        @include match(retina) {
+            //image path
+        }
+    }
+
+    @include match(desktop) {
+        padding: 200px 0;
+        //image path
+        @include match(retina) {
+            //image path
+        }
+    }
 
     &__container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        max-height: 200px;
     }
 
     &__header {
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 2.64px;
-        width: 696px;
-        margin-bottom: 40px;
-        color: getColor(background-primary-color);
-        text-transform: uppercase;
+        color: var(--white);
         text-align: center;
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 161.54%;
+        letter-spacing: 1.56px;
+        text-transform: uppercase;
+        max-width: 360px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        color: getColor(background-primary-color);
+
+        @include match(desktop) {
+            max-width: 696px;
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 136.36%;
+            letter-spacing: 2.64px;
+          }
     }
 
     &__button {

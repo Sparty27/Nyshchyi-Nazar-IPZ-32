@@ -2,6 +2,11 @@
     .container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    .active {
+        color: getColor(accent-color)
     }
 
     background-color: getColor(background-primary-color);
@@ -11,6 +16,22 @@
         list-style-type: none;
         display: flex;
         gap: 50px;
+
+        @include match(mobile) {
+            display: none;
+        }
+
+        @include match(tablet) {
+            list-style-type: none;
+            display: flex;
+            gap: 50px;
+        }
+
+        @include match(desktop) {
+            list-style-type: none;
+            display: flex;
+            gap: 50px;
+        }
     }
 
     &__navigation-button {
@@ -53,15 +74,25 @@
     }
 
     &__contact-info {
-        margin-left: auto;
-        display: flex;
-        gap: 40px;
-        color: getColor(secondary-color);
-        list-style-type: none;
+        @include match(mobile) {
+            display: none;
+        }
+        @include match(tablet) {
+            margin-left: auto;
+            display: block;
+            gap: 10px;
+            color: getColor(secondary-color);
+        }
+        @include match(desktop) {
+            margin-left: auto;
+            display: flex;
+            gap: 40px;
+        }
     }
 
     &__email {
         font-weight: 500;
+        font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.28px;
         color: inherit;
@@ -75,6 +106,14 @@
             transition: all 0.3s;
             color: getColor(accent-color);
             fill: getColor(accent-color);
+        }
+
+        @include match(tablet) {
+            margin-bottom: 10px;
+        }
+        @include match(desktop) {
+            margin-bottom: 0px;
+            font-size: 14px;
         }
     }
 
@@ -90,6 +129,7 @@
 
     &__tel {
         font-weight: 500;
+        font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.28px;
         color: inherit;
@@ -104,6 +144,10 @@
             color: getColor(accent-color);
             fill: getColor(accent-color);
         }
+        @include match(desktop) {
+            margin-bottom: 0px;
+            font-size: 14px;
+        }
     }
 
     &__phone-icon {
@@ -113,6 +157,13 @@
             transition: all 0.3s;
             color: getColor(accent-color);
             fill: getColor(accent-color);
+        }
+    }
+
+    &__navigation-list,
+    &__contact-info {
+        @media screen and (max-width: 479px) {
+            display: none;
         }
     }
 }
